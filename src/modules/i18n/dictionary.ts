@@ -35,7 +35,6 @@ export const dictionary = {
     promised: "Promised Wage",
     paid: "Paid Amount",
     hours: "Hours",
-    // --- newly added missing keys from build ---
     error: "An error occurred",
     saved: "Saved successfully!",
     confirmTitle: "Confirm Details",
@@ -47,7 +46,12 @@ export const dictionary = {
     sayAgain: "Say Again",
     processing: "Processing...",
     micError: "Microphone access denied",
-    voiceError: "Could not understand, please try again"
+    voiceError: "Could not understand, please try again",
+    consentTitle: "Your Consent is Required",
+    consentText: "I agree to share my work logs, voice notes, photos, and complaint draft with Demo Legal Aid Partner.",
+    agreeShare: "I Agree, Submit Case",
+    receiptTitle: "Case Submitted",
+    trackStatus: "Share / Track Case",
   },
   kn: {
     home: "ಮುಖಪುಟ",
@@ -85,7 +89,6 @@ export const dictionary = {
     promised: "ಭರವಸೆ ನೀಡಿದ ವೇತನ",
     paid: "ಪಾವತಿಸಿದ ಮೊತ್ತ",
     hours: "ಗಂಟೆಗಳು",
-    // --- newly added missing keys from build ---
     error: "ದೋಷ ಸಂಭವಿಸಿದೆ",
     saved: "ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ!",
     confirmTitle: "ವಿವರಗಳನ್ನು ಖಚಿತಪಡಿಸಿ",
@@ -97,7 +100,12 @@ export const dictionary = {
     sayAgain: "ಮತ್ತೆ ಹೇಳಿ",
     processing: "ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ...",
     micError: "ಮೈಕ್ರೊಫೋನ್ ದೋಷ",
-    voiceError: "ಅರ್ಥವಾಗಲಿಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+    voiceError: "ಅರ್ಥವಾಗಲಿಲ್ಲ, ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ",
+    consentTitle: "ನಿಮ್ಮ ಸಮ್ಮತಿ ಅಗತ್ಯವಿದೆ",
+    consentText: "ನನ್ನ ಕೆಲಸದ ಲಾಗ್‌ಗಳು, ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳು, ಫೋಟೋಗಳು ಮತ್ತು ದೂರಿನ ಕರಡನ್ನು ಡೆಮೊ ಲೀಗಲ್ ಏಡ್ ಪಾಲುದಾರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನಾನು ಒಪ್ಪುತ್ತೇನೆ.",
+    agreeShare: "ನಾನು ಒಪ್ಪುತ್ತೇನೆ, ಕೇಸ್ ಸಲ್ಲಿಸಿ",
+    receiptTitle: "ಕೇಸ್ ಸಲ್ಲಿಸಲಾಗಿದೆ",
+    trackStatus: "ಕೇಸ್ ಹಂಚಿಕೊಳ್ಳಿ / ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
   },
   hi: {
     home: "होम",
@@ -135,7 +143,6 @@ export const dictionary = {
     promised: "तय की गई मजदूरी",
     paid: "भुगतान की गई राशि",
     hours: "घंटे",
-    // --- newly added missing keys from build ---
     error: "एक त्रुटि हुई",
     saved: "सफलतापूर्वक सहेजा गया!",
     confirmTitle: "विवरण की पुष्टि करें",
@@ -147,7 +154,12 @@ export const dictionary = {
     sayAgain: "फिर से बोलें",
     processing: "प्रोसेस हो रहा है...",
     micError: "माइक्रोफ़ोन त्रुटि",
-    voiceError: "समझ नहीं आया, कृपया पुनः प्रयास करें"
+    voiceError: "समझ नहीं आया, कृपया पुनः प्रयास करें",
+    consentTitle: "आपकी सहमति आवश्यक है",
+    consentText: "मैं डेमो लीगल एड पार्टनर के साथ अपने वर्क लॉग, वॉयस नोट्स, फोटो और शिकायत का ड्राफ्ट साझा करने के लिए सहमत हूं।",
+    agreeShare: "मैं सहमत हूं, केस सबमिट करें",
+    receiptTitle: "केस सबमिट किया गया",
+    trackStatus: "केस साझा करें / ट्रैक करें",
   }
 };
 

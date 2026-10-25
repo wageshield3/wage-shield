@@ -8,10 +8,8 @@ import { computeSummary, rupees } from "@/modules/logs/lib/summary";
 import LogForm from "@/modules/logs/components/LogForm";
 import LanguageSwitch from "@/modules/logs/components/LanguageSwitch";
 import VoiceEntry from "@/modules/voice/components/VoiceEntry";
-
-// Added imports for the button
 import Link from "next/link";
-import { FileText } from "lucide-react";
+import { FileText, ShieldCheck } from "lucide-react";
 
 export default function Page() {
   return (
@@ -31,6 +29,7 @@ async function Content() {
   const logs = (data ?? []) as WorkLog[];
   const s = computeSummary(logs);
   const last = logs.find((l) => Number(l.hours ?? 0) > 0);
+  
   const stat = (label: string, value: string) => (
     <div className="flex-1 rounded-xl bg-white p-3">
       <div className="text-sm text-[#41546B]">{label}</div>
@@ -54,13 +53,16 @@ async function Content() {
           {stat(t(lang, "totalPaid"), rupees(s.paid))}
         </div>
 
-        {/* NEW GENERATE COMPLAINT BUTTON (Module 5) */}
-        <Link 
-          href="/worker/complaint" 
-          className="flex w-full min-h-[56px] items-center justify-center gap-2 bg-[#F5A524] text-[#12263F] font-bold py-4 rounded-xl shadow-md text-lg active:scale-95 transition-transform"
-        >
-          <FileText size={24} /> {t(lang, "generateComplaint")}
-        </Link>
+        {/* Action Buttons Row */}
+        <div className="flex gap-3 mb-2">
+          <Link className="flex-1 flex min-h-[56px] items-center justify-center gap-2 bg-[#F5A524] text-[#12263F] font-bold py-4 rounded-xl shadow-md text-sm sm:text-base active:scale-95 transition-transform text-center" href="/worker/complaint">
+            <FileText size={20} /> {t(lang, "generateComplaint")}
+          </Link>
+          
+          <Link className="flex-1 flex min-h-[56px] items-center justify-center gap-2 bg-[#1E7A4F] text-white font-bold py-4 rounded-xl shadow-md text-sm sm:text-base active:scale-95 transition-transform text-center" href="/worker/share">
+            <ShieldCheck size={20} /> {t(lang, "trackStatus")}
+          </Link>
+        </div>
 
         <VoiceEntry lang={lang} defaults={{ site: last?.site_name ?? "", contractor: last?.contractor_name ?? "", promised: Number(last?.promised_wage ?? 0) }} />
         <LogForm lang={lang} defaults={{ site: last?.site_name ?? "", contractor: last?.contractor_name ?? "", promised: Number(last?.promised_wage ?? 800) }} />
