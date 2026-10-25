@@ -19,7 +19,7 @@ Daily-wage workers like Ramesh, a mason in Karnataka, are promised ₹800 a day 
 |---|---|---|
 | Worker | abc@worker.com | Abc@worker |
 | Helper | xyz@helper.com | Xyz@worker |
-| Partner (simulated NGO) | ngo@wageshield.test | PASSWORD |
+| Partner (simulated NGO) | ngo@wageshield.test | 123456 |
 
 You can also create your own worker or helper account on the signup page.
 
