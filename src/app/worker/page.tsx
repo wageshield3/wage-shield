@@ -10,6 +10,7 @@ import LanguageSwitch from "@/modules/logs/components/LanguageSwitch";
 import VoiceEntry from "@/modules/voice/components/VoiceEntry";
 import Link from "next/link";
 import { FileText, ShieldCheck } from "lucide-react";
+import LinkCodeCard from "@/modules/helpermode/components/LinkCodeCard";
 
 export default function Page() {
   return (
