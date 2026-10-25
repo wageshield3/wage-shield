@@ -42,6 +42,7 @@ async function Content() {
     <HomeShell profile={profile}>
       <div className="flex flex-col gap-6 animate-fadeIn pb-10">
         <LanguageSwitch current={lang} />
+        <LinkCodeCard />
         
         {/* Unpaid Balance Card */}
         <div className="rounded-3xl bg-gradient-to-br from-[#B3261E] to-[#8C1D18] p-6 text-white shadow-lg">
