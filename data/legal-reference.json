@@ -1,0 +1,20 @@
+{
+  "_note": "The AI may use ONLY this file for legal facts. Resolve every TODO_VERIFY from official sources before the demo.",
+  "last_verified": "2026-10-24",
+  "framework": {
+    "name": "Code on Wages, 2019",
+    "in_force_from": "2025-11-21",
+    "replaces": ["Payment of Wages Act, 1936", "Minimum Wages Act, 1948"],
+    "state_rules_status_karnataka": "TODO_VERIFY",
+    "verified": true
+  },
+  "authorities": [
+    { "id": "labour_office", "name": "District labour department office", "address": "TODO_VERIFY", "phone": "TODO_VERIFY", "verified": false },
+    { "id": "legal_services", "name": "District Legal Services Authority", "address": "TODO_VERIFY", "phone": "TODO_VERIFY", "verified": false }
+  ],
+  "helplines": [
+    { "id": "india_labourline", "name": "India Labourline", "phone": "1800-833-9020", "verified": true }
+  ],
+  "what_to_carry": ["Evidence summary from the app", "Voice notes and photos", "Name and site of contractor", "Any ID the worker has"],
+  "disclaimer": "Guidance, not legal advice. Please verify with the labour office."
+}
