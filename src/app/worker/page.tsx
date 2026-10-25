@@ -7,6 +7,7 @@ import { t } from "@/modules/i18n/dictionary";
 import { computeSummary, rupees } from "@/modules/logs/lib/summary";
 import LogForm from "@/modules/logs/components/LogForm";
 import LanguageSwitch from "@/modules/logs/components/LanguageSwitch";
+import VoiceEntry from "@/modules/voice/components/VoiceEntry";
 
 export default function Page() {
   return (
@@ -46,6 +47,7 @@ async function Content() {
           {stat(t(lang, "totalPromised"), rupees(s.promised))}
           {stat(t(lang, "totalPaid"), rupees(s.paid))}
         </div>
+        <VoiceEntry lang={lang} defaults={{ site: last?.site_name ?? "", contractor: last?.contractor_name ?? "", promised: Number(last?.promised_wage ?? 0) }} />
         <LogForm lang={lang} defaults={{ site: last?.site_name ?? "", contractor: last?.contractor_name ?? "", promised: Number(last?.promised_wage ?? 800) }} />
         <div className="rounded-2xl bg-white p-5">
           <h2 className="mb-2 text-xl font-bold">{t(lang, "recent")}</h2>
